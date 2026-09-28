@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# PUBLICATIONS
+# Newest first. This list feeds both the homepage "Recent Publications"
+# preview (top 3) and the full Publications page.
+# ---------------------------------------------------------------------------
+
+- year: 2026
+  title: "myloasm: a long-read metagenome assembler"
+  authors: "Shaw, J., et al., Li, H."
+  venue: "Nature Biotechnology"
+  links:
+    - label: Paper
+      url: "#"
+    - label: Code
+      url: "https://github.com/bluenote-1577/myloasm"
+
+- year: 2026
+  title: "savont: generating amplicon sequence variants from long reads"
+  authors: "Shaw, J., et al."
+  venue: "Preprint"
+  links:
+    - label: Preprint
+      url: "#"
+    - label: Code
+      url: "https://github.com/bluenote-1577/savont"
+
+- year: 2023
+  title: "sylph: ultrafast ANI-based genome and metagenome profiling"
+  authors: "Shaw, J., Yu, Y. W."
+  venue: "Nature Methods"
+  links:
+    - label: Paper
+      url: "#"
+    - label: Code
+      url: "https://github.com/bluenote-1577/sylph"
+
+# Add a new entry by copying one of the blocks above. "links" is optional —
+# omit it for a citation with no links yet. Update the "#" URLs with real
+# DOI/journal links whenever you have a spare minute.

@@ -1,0 +1,77 @@
+# ---------------------------------------------------------------------------
+# SITE SETTINGS
+# Edit the values below to update text that appears across the whole site.
+# After changing this file, commit + push — GitHub Pages rebuilds automatically.
+# ---------------------------------------------------------------------------
+
+title: "JShaw Lab"
+tagline: "Computational Genomics at UNC"
+description: >-
+  The JShaw Lab develops algorithms, software, and tools for large-scale microbial and metagenomic sequence analysis. We will be starting in July 2027 in the Department of Computer Science at the University of North Carolina. 
+
+# Shown in the site header/footer and on the Team page for the PI
+pi_name: "Jim Shaw"
+pi_title: "Principal Investigator"
+
+# Institution details — placeholders, update when finalized
+university: "University of North Carolina"
+department: "Department of Computer Science"
+address: "Chapel Hill, North Carolina"
+
+email: "jshaw@example.edu"
+github: "bluenote-1577"
+google_scholar: "hNAwGS8AAAAJ"
+bluesky: "jimshaw.bsky.social"
+twitter: ""
+
+# Optional photo on the homepage hero (lab group photo, building, you, etc).
+# Empty ("") hides it. To add one: drop an image at assets/img/hero.jpg
+# (wide, e.g. 1600x900) and set hero_image to its path below.
+hero_image: "assets/img/hero.jpg"
+hero_image_caption: ""
+
+# Top navigation, in order. Add/remove/reorder entries here.
+nav:
+  - title: Research
+    url: /
+  - title: How to Join
+    url: /join/
+  - title: Team
+    url: /team/
+  - title: Software
+    url: /software/
+  - title: Publications
+    url: /publications/
+
+# Accent color used throughout the site (buttons, links, underlines, the
+# software-page color chips). Change this single value to re-theme the
+# whole site — no CSS editing required. A few options to try, tested
+# against the site's off-white background:
+#
+#   "#3a6ea5"   steel blue      (current)
+#   "#3d5a80"   slate blue      (calmer, more muted)
+#   "#e07a5f"   salmon          (warm, distinctive)
+#   "#c9848c"   dusty rose      (soft pink)
+#   "#5b7553"   sage green
+#   "#a5462f"   brick red
+#
+# Just paste one of the hex codes below, save, and refresh — see README.md
+# for how to preview changes locally before committing.
+accent_color: "#3a6ea5"
+
+# ---------------------------------------------------------------------------
+# Build settings — leave as-is unless you know what you're doing
+# ---------------------------------------------------------------------------
+markdown: kramdown
+sass:
+  style: compressed
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

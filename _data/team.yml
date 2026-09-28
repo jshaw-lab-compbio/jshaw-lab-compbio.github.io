@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------------
+# TEAM
+# One entry per lab member. Add a new "- name: ..." block to add someone;
+# delete a block to remove someone. Order here = order on the Team page.
+#
+# photo: put a square-ish image (min ~400x400px) in assets/img/team/
+#         and point to it, e.g. assets/img/team/jane-doe.jpg
+#         Leave blank ("") to show a plain placeholder instead.
+#
+# cv: optional. Path to a CV PDF (e.g. assets/files/jane-doe-cv.pdf) or a
+#     full URL. When set, a "CV" link appears on the member's card; omit
+#     the line to show nothing.
+#
+# role: use "pi" for the principal investigator (gets the large featured
+#       layout at the top of the Team page); anything else (e.g. "PhD
+#       Student", "Postdoctoral Fellow", "Research Assistant") gets a
+#       regular grid card.
+# ---------------------------------------------------------------------------
+
+- name: Jim Shaw, PhD
+  role: pi
+  title: Assistant Professor and Principal Investigator
+  photo: "assets/img/team/jim-shaw.jpg"
+  cv: "assets/files/jim-shaw-cv.pdf"
+  bio: >
+    Jim leads the JShaw Lab. Jim completed his PhD in Mathematics at the
+    University of Toronto (advised by Yun William Yu) and trained as a
+    postdoctoral fellow at Harvard Medical School and the
+    Dana-Farber Cancer Institute (advised by Heng Li). Previously, Jim did his BASc in Engineering Physics and Mathematics
+    at the University of British Columbia in his hometown of Vancouver, Canada.
+  links:
+    - label: Google Scholar
+      url: "https://scholar.google.com/citations?user=hNAwGS8AAAAJ"
+    - label: GitHub
+      url: "https://github.com/bluenote-1577"
+    - label: Bluesky
+      url: "https://bsky.app/profile/jimshaw.bsky.social"
+
+# Example of an additional member — copy this block, edit, and add a photo
+# to include a new lab member on the Team page.
+#
+# - name: Alex Doe
+#   role: PhD Student
+#   photo: "assets/img/team/alex-doe.jpg"
+#   bio: >
+#     One or two sentences about Alex's background and what they work on
+#     in the lab.
+#   links:
+#     - label: GitHub
+#       url: "https://github.com/example"

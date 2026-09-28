@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------------------
+# SOFTWARE
+# One entry per tool. Order here = order on the Software page.
+#
+# color: any hex code — used as a small identifying dot next to the tool's
+#        name and as an accent on its publication note, so tools are easy
+#        to tell apart at a glance without needing a custom icon for each.
+# publication: optional — venue + year shown as a small standardized note
+#              under the description (e.g. "Nature Methods, 2023"). Omit
+#              the whole field for unpublished/in-progress tools.
+# ---------------------------------------------------------------------------
+
+- name: myloasm
+  color: "#3a6ea5"
+  tagline: "Long-read metagenome assembler"
+  description: >
+    An assembler purpose-built for long-read metagenomic data, designed to
+    recover high-quality genomes directly from complex microbial
+    communities.
+  publication:
+    venue: "Nature Biotechnology"
+    year: 2026
+    url: "#"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/myloasm"
+
+- name: savont
+  color: "#a5622c"
+  tagline: "Amplicon sequence variants from long reads"
+  description: >
+    A method for generating amplicon sequence variants (ASVs) from
+    long-read sequencing data.
+  publication:
+    venue: "Preprint"
+    year: 2026
+    url: "#"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/savont"
+
+- name: sylph
+  color: "#5b7553"
+  tagline: "Ultrafast genome and metagenome profiling"
+  description: >
+    A tool for extremely fast, memory-efficient computation of average
+    nucleotide identity (ANI) for genome and metagenome profiling against
+    large reference databases.
+  publication:
+    venue: "Nature Methods"
+    year: 2023
+    url: "#"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/sylph"

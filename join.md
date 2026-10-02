@@ -7,10 +7,10 @@ title: How to Join
 
 <p class="page-lede">We're always happy to hear from people excited about computational genomics, data science, and bioinformatics algorithms. </p>
 
-<p class="page-lede">Strong foundational knowledge in some quantitative field (e.g., algorithms, math, statistics, or machine learning) is required for joining the lab. No strict biology background is necessary. Nevertheless, our lab works in an interdisciplinary space where our algorithms directly impact how modern microbiology research is done. Therefore, curiosity about biology, microbes, and genomics is highly encouraged. </p>
+Strong foundational knowledge in some quantitative field (e.g., algorithms, math, statistics, or machine learning) is required for joining the lab. No strict biology background is necessary. Nevertheless, our lab works in an interdisciplinary space where our algorithms directly impact how modern microbiology research is done. Therefore, curiosity about biology, microbes, and genomics is highly encouraged. 
 
 <div class="section">
-  <h2 class="section__heading">PhD Students</h2>
+  <h2 class="section__heading">PhD Students (Recruiting for Fall 2027)</h2>
   <p>
     Prospective CS PhD students should apply directly through the
     {{ site.department }} graduate admissions process at {{ site.university }}
@@ -24,7 +24,7 @@ title: How to Join
     We welcome postdoctoral applicants with backgrounds in computer science,
     mathematics, statistics, or computational genomics who are interested in developing
     methods and software for sequence analysis. Please email a CV, a short
-    description of your research interests, and a (non-AI written) paragraph indicating why you'd be a good fit. 
+    description of your research interests, and 1-2 (non-AI written) paragraphs indicating why you'd be a good fit. 
   </p>
 </div>
 
@@ -32,7 +32,7 @@ title: How to Join
   <h2 class="section__heading">Undergraduate &amp; Rotation Students</h2>
   <p>
     Highly motivated undergraduates are encouraged to reach
-    out. Please send a copy of your transcript, your CV, and a (non-AI written) paragraph concisely explaining (1) your interest in the lab and (2) relevant coursework / projects. 
+    out. Please send a copy of your transcript, your CV, and 1-2 (non-AI written) paragraphs concisely explaining (1) your interest in the lab and (2) relevant coursework / projects. 
 </p>
 </div>
 

@@ -5,9 +5,11 @@
 # ---------------------------------------------------------------------------
 
 title: "JShaw Lab"
-tagline: "Computational Genomics at UNC"
+tagline: "Algorithms + Microgenomics at UNC"
 description: >-
-  The JShaw Lab develops algorithms, software, and tools for large-scale microbial and metagenomic sequence analysis. We will be starting in July 2027 in the Department of Computer Science at the University of North Carolina. 
+  The JShaw Lab develops algorithms, software, and tools for large-scale biological sequence analysis. 
+  
+  We will be starting in the Fall of 2027 in the Department of Computer Science at the University of North Carolina, Chapel Hill. 
 
 # Shown in the site header/footer and on the Team page for the PI
 pi_name: "Jim Shaw"
@@ -27,8 +29,8 @@ twitter: ""
 # Optional photo on the homepage hero (lab group photo, building, you, etc).
 # Empty ("") hides it. To add one: drop an image at assets/img/hero.jpg
 # (wide, e.g. 1600x900) and set hero_image to its path below.
-hero_image: "assets/img/hero.jpg"
-hero_image_caption: ""
+hero_image: "assets/img/gut_graph_hero.png"
+hero_image_caption: "An assembly graph representing several circular bacterial chromosomes from a real human oral microbiome."
 
 # Top navigation, in order. Add/remove/reorder entries here.
 nav:

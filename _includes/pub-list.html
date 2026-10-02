@@ -1,0 +1,18 @@
+<ul class="pub-list">
+  {% for pub in include.pubs %}
+  <li>
+    <span class="pub-year">{{ pub.year }}</span>
+    <div class="pub-body">
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-meta">{{ pub.authors | replace: "Jim Shaw", "<strong>Jim Shaw</strong>" }} — <em>{{ pub.venue }}</em></div>
+      {% if pub.links %}
+      <div class="pub-links">
+        {% for link in pub.links %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>

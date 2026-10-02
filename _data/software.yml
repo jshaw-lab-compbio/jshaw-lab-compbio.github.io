@@ -2,54 +2,127 @@
 # SOFTWARE
 # One entry per tool. Order here = order on the Software page.
 #
-# color: any hex code — used as a small identifying dot next to the tool's
-#        name and as an accent on its publication note, so tools are easy
-#        to tell apart at a glance without needing a custom icon for each.
-# publication: optional — venue + year shown as a small standardized note
-#              under the description (e.g. "Nature Methods, 2023"). Omit
-#              the whole field for unpublished/in-progress tools.
+# color:       any hex code — the small identifying dot next to the tool's
+#              name and the accent on its publication note.
+# tagline:     one-line description shown under the name.
+# description: optional extra text (e.g. credits). Omit if not needed.
+# publication: optional — venue + year shown as a small note linking to the
+#              paper. Omit for tools with nothing published yet.
+# links:       optional list of {label, url}.
 # ---------------------------------------------------------------------------
-
-- name: myloasm
-  color: "#3a6ea5"
-  tagline: "Long-read metagenome assembler"
-  description: >
-    An assembler purpose-built for long-read metagenomic data, designed to
-    recover high-quality genomes directly from complex microbial
-    communities.
-  publication:
-    venue: "Nature Biotechnology"
-    year: 2026
-    url: "#"
-  links:
-    - label: GitHub
-      url: "https://github.com/bluenote-1577/myloasm"
 
 - name: savont
   color: "#a5622c"
-  tagline: "Amplicon sequence variants from long reads"
-  description: >
-    A method for generating amplicon sequence variants (ASVs) from
-    long-read sequencing data.
+  tagline: "Amplicon sequence variants (ASVs) from modern long-read amplicon sequencing."
   publication:
-    venue: "Preprint"
+    venue: "bioRxiv"
     year: 2026
-    url: "#"
+    url: "https://www.biorxiv.org/content/10.64898/2026.05.26.727271v1"
   links:
     - label: GitHub
       url: "https://github.com/bluenote-1577/savont"
 
+- name: myloasm
+  color: "#3a6ea5"
+  tagline: "De novo long-read metagenome assembler, even for noisy sequences."
+  publication:
+    venue: "Nature Biotechnology"
+    year: 2026
+    url: "https://www.nature.com/articles/s41587-026-03053-z"
+  links:
+    - label: Docs
+      url: "https://myloasm-docs.github.io/"
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/myloasm"
+
+- name: devider
+  color: "#7a5c99"
+  tagline: "Long-read haplotypes for highly heterogeneous sequencing mixtures."
+  publication:
+    venue: "Genome Research"
+    year: 2025
+    url: "https://genome.cshlp.org/content/early/2025/09/23/gr.280510.125.abstract"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/devider"
+
+- name: fairy
+  color: "#c76b8a"
+  tagline: "Fast approximate coverage for metagenomic binning."
+  publication:
+    venue: "Microbiome"
+    year: 2024
+    url: "https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-024-01861-6"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/fairy"
+
 - name: sylph
   color: "#5b7553"
-  tagline: "Ultrafast genome and metagenome profiling"
-  description: >
-    A tool for extremely fast, memory-efficient computation of average
-    nucleotide identity (ANI) for genome and metagenome profiling against
-    large reference databases.
+  tagline: "Statistical ANI querying and profiling for metagenomic samples."
+  publication:
+    venue: "Nature Biotechnology"
+    year: 2024
+    url: "https://doi.org/10.1038/s41587-024-02412-y"
+  links:
+    - label: Docs
+      url: "https://sylph-docs.github.io/"
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/sylph"
+
+- name: floria
+  color: "#2f8a8a"
+  tagline: "Microbial strain phasing by flow-based MEC haplotyping."
+  publication:
+    venue: "Bioinformatics (ISMB)"
+    year: 2024
+    url: "https://doi.org/10.1093/bioinformatics/btae252"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/floria"
+
+- name: skani
+  color: "#b8942f"
+  tagline: "Fast and robust ANI calculation by sparse k-mer chaining."
   publication:
     venue: "Nature Methods"
     year: 2023
-    url: "#"
+    url: "https://doi.org/10.1038/s41592-023-02018-3"
   links:
     - label: GitHub
-      url: "https://github.com/bluenote-1577/sylph"
+      url: "https://github.com/bluenote-1577/skani"
+
+- name: mora
+  color: "#4d4d8c"
+  tagline: "Strain-level read reassignment."
+  description: "Written by Andrew Zheng."
+  publication:
+    venue: "BMC Bioinformatics"
+    year: 2024
+    url: "https://doi.org/10.1186/s12859-024-05768-9"
+  links:
+    - label: GitHub
+      url: "https://github.com/AfZheng126/MORA"
+
+- name: flopp
+  color: "#b5483b"
+  tagline: "Fast polyploid haplotype phasing for long-read data."
+  publication:
+    venue: "Journal of Computational Biology"
+    year: 2022
+    url: "https://doi.org/10.1089/cmb.2021.0436"
+  links:
+    - label: GitHub
+      url: "https://github.com/bluenote-1577/flopp"
+
+- name: OPERA-MS
+  color: "#7d6b5d"
+  tagline: "Hybrid metagenomic assembler for long and short reads."
+  description: "Written by during Jim's first internship in computational genomics."
+  publication:
+    venue: "Nature Biotechnology"
+    year: 2019
+    url: "https://www.nature.com/articles/s41587-019-0191-2"
+  links:
+    - label: GitHub
+      url: "https://github.com/CSB5/OPERA-MS"

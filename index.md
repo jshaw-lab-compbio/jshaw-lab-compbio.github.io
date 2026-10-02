@@ -6,7 +6,7 @@ title: Research
 <div class="hero">
   <div class="hero__text">
     <div class="hero__eyebrow">{{ site.department }} · {{ site.university }}</div>
-    <h1 class="hero__title">Algorithms and Data Science for Microbial Genomics</h1>
+    <h1 class="hero__title">Algorithms and Data Science for (Microbial) Genomics</h1>
     <p class="hero__lede">{{ site.description }}</p>
   </div>
 
@@ -23,19 +23,13 @@ title: Research
 <div class="section">
   <h2 class="section__heading">Research Overview</h2>
   <p>
-    We build computational methods and open-source software for making sense
-    of large-scale microbial and metagenomic sequencing data. Modern
-    sequencing produces datasets — from long-read metagenomes to massive
-    microbial reference databases — that outpace the algorithms designed to
-    analyze them. Our lab works at the intersection of algorithm design,
-    statistics, and applied genomics to close that gap.
+<b>We build computational methods to make sense
+    of large-scale biological sequence data</b>, such as trillions of DNA or amino acids characters. To do this, we use a pragmatic combination of techniques spanning <b>classical algorithm design, modern data science methods, and even theoretical analysis of algorithms</b>. Our tools and software are routinely used by biologists to search, compare, and reconstruct hundreds of terabytes of genomic data for biological discovery. 
   </p>
+
   <p>
-    A second, related thread of our work asks evolutionary questions about
-    microbial genomes and microbiome communities: how strains diverge, how
-    genomes assemble and recombine within a community, and what these
-    dynamics reveal about the underlying biology.
-  </p>
+    Our computational research is driven by real biological applications, especially in the fascinating field of microbiome research. We often wrangle massive, noisy "omics" datasets appearing in modern microbiology, such as long-read metagenomes or microbial genome catalogs. See below for specific areas of research we are interested in. 
+       </p>
 </div>
 
 <div class="section">
@@ -48,10 +42,9 @@ title: Research
         </svg>
       </div>
       <div>
-        <h3>Ultrafast genome comparison</h3>
-        <p>Sketch-based and probabilistic methods for computing genome and
-        metagenome similarity at the scale of hundreds of thousands of
-        references.</p>
+        <h3>Terabyte-scale algorithms for disentangling microbial genomics data</h3>
+        <p>To analyze and compare terabytes of redundant, noisy sequencing data, we design highly efficient algorithms and turn them into high-performance tools. 
+    To do this, we often leverage ideas from classical string algorithms (e.g., edit distance computation / dynamic programming) but combined a probabilistic flavor (e.g., sketching-based techniques and statistical inference).  </p>
       </div>
     </div>
     <div class="research-item">
@@ -63,9 +56,8 @@ title: Research
         </svg>
       </div>
       <div>
-        <h3>Long-read metagenome assembly</h3>
-        <p>Assembly and profiling methods tailored to long-read sequencing of
-        complex, multi-strain microbial communities.</p>
+        <h3>Long-read metagenome assembly: reconstructing genomes from substrings</h3>
+        <p> We work on the exciting field of metagenome assembly, where we use highly efficient graph algorithms to reconstruct microbial genomes from the sequencing of entire microbiomes, such as our gut. More than 90% of genomes in soil samples can be completely novel, thus our algorithms are used to reconstruct and discover genomes of completely novel organisms. </p>
       </div>
     </div>
     <div class="research-item">
@@ -75,9 +67,8 @@ title: Research
         </svg>
       </div>
       <div>
-        <h3>Microbiome genome evolution</h3>
-        <p>Analytical approaches for understanding how microbial strains and
-        genomes evolve within and across host-associated communities.</p>
+        <h3>Microbiome genome evolution and mobile genetic elements</h3>
+        <p> In a microbiome, such as our gut, trillions of bacteria and viruses interact live and interact as a community. These interactions drive genomic changes, often mediated by mobile genetic elements such as plasmids, viruses, or genomic islands that can jump across genomes. This results in adaptations such as pathogen virulence and antibiotic resistance. We are building computational tools to capture these events and broadly characterize mobile genetic elements.  </p>
       </div>
     </div>
   </div>
@@ -85,23 +76,7 @@ title: Research
 
 <div class="section">
   <h2 class="section__heading">Recent Publications</h2>
-  <ul class="pub-list">
-    {% for pub in site.data.publications limit:3 %}
-    <li>
-      <span class="pub-year">{{ pub.year }}</span>
-      <div class="pub-body">
-        <div class="pub-title">{{ pub.title }}</div>
-        <div class="pub-meta">{{ pub.authors }} — <em>{{ pub.venue }}</em></div>
-        {% if pub.links %}
-        <div class="pub-links">
-          {% for link in pub.links %}
-          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
-          {% endfor %}
-        </div>
-        {% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+  {% assign recent = site.data.publications | slice: 0, 3 %}
+  {% include pub-list.html pubs=recent %}
   <a class="view-all" href="{{ '/publications/' | relative_url }}">View all publications &rarr;</a>
 </div>

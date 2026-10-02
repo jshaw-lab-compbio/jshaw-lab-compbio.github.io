@@ -20,14 +20,14 @@
 - name: Jim Shaw, PhD
   role: pi
   title: Assistant Professor and Principal Investigator
-  photo: "assets/img/team/jim-shaw.jpg"
+  photo: "assets/img/team/jim-shaw-cropped.jpg"
   cv: "assets/files/jim-shaw-cv.pdf"
   bio: >
-    Jim leads the JShaw Lab. Jim completed his PhD in Mathematics at the
-    University of Toronto (advised by Yun William Yu) and trained as a
+    Jim completed his PhD in Mathematics at the
+    University of Toronto (advised by Yun William Yu; now at Carnegie Mellon University) and trained as a
     postdoctoral fellow at Harvard Medical School and the
     Dana-Farber Cancer Institute (advised by Heng Li). Previously, Jim did his BASc in Engineering Physics and Mathematics
-    at the University of British Columbia in his hometown of Vancouver, Canada.
+    at the University of British Columbia in his hometown of Vancouver, Canada. 
   links:
     - label: Google Scholar
       url: "https://scholar.google.com/citations?user=hNAwGS8AAAAJ"

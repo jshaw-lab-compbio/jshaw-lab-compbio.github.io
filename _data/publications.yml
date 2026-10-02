@@ -1,39 +1,171 @@
 # ---------------------------------------------------------------------------
 # PUBLICATIONS
-# Newest first. This list feeds both the homepage "Recent Publications"
-# preview (top 3) and the full Publications page.
+# Newest first. Feeds the homepage "Recent Publications" preview (top 3)
+# and the Publications page.
+#
+# authors:  plain text. "Jim Shaw" is automatically bolded on the page.
+#           Use a trailing * for co-lead authors (the page explains the *).
+# selected: true  -> also listed under "Selected works" at the top of the
+#           Publications page (it still appears in "All publications").
+# links:    optional list of {label, url}.
 # ---------------------------------------------------------------------------
 
 - year: 2026
-  title: "myloasm: a long-read metagenome assembler"
-  authors: "Shaw, J., et al., Li, H."
-  venue: "Nature Biotechnology"
-  links:
-    - label: Paper
-      url: "#"
-    - label: Code
-      url: "https://github.com/bluenote-1577/myloasm"
-
-- year: 2026
-  title: "savont: generating amplicon sequence variants from long reads"
-  authors: "Shaw, J., et al."
-  venue: "Preprint"
+  title: "Sensitive long-read amplicon sequence variant recovery with savont"
+  authors: "Jim Shaw, Marie Riisgaard-Jensen, Kasper Skytte Andersen, Rasmus Kirkegaard, Morten Kam Dahl Dueholm, Heng Li"
+  venue: "bioRxiv"
   links:
     - label: Preprint
-      url: "#"
+      url: "https://www.biorxiv.org/content/10.64898/2026.05.26.727271v1"
     - label: Code
       url: "https://github.com/bluenote-1577/savont"
 
-- year: 2023
-  title: "sylph: ultrafast ANI-based genome and metagenome profiling"
-  authors: "Shaw, J., Yu, Y. W."
-  venue: "Nature Methods"
+- year: 2026
+  title: "High-resolution metagenome assembly for modern long reads with myloasm"
+  authors: "Jim Shaw, Maximillian G. Marin, Heng Li"
+  venue: "Nature Biotechnology"
+  selected: true
   links:
     - label: Paper
-      url: "#"
+      url: "https://www.nature.com/articles/s41587-026-03053-z"
+    - label: Docs
+      url: "https://myloasm-docs.github.io/"
+
+- year: 2025
+  title: "devider: long-read reconstruction of many diverse haplotypes"
+  authors: "Jim Shaw, Christina Boucher, Yun William Yu, Noelle Noyes, Heng Li"
+  venue: "Genome Research / RECOMB 2025"
+  links:
+    - label: Paper
+      url: "https://genome.cshlp.org/content/early/2025/09/23/gr.280510.125.abstract"
+    - label: Code
+      url: "https://github.com/bluenote-1577/devider"
+
+- year: 2024
+  title: "Rapid species-level metagenome profiling and containment estimation with sylph"
+  authors: "Jim Shaw, Yun William Yu"
+  venue: "Nature Biotechnology"
+  selected: true
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1038/s41587-024-02412-y"
     - label: Code
       url: "https://github.com/bluenote-1577/sylph"
 
-# Add a new entry by copying one of the blocks above. "links" is optional —
-# omit it for a citation with no links yet. Update the "#" URLs with real
-# DOI/journal links whenever you have a spare minute.
+- year: 2024
+  title: "Floria: Fast and accurate strain haplotyping in metagenomes"
+  authors: "Jim Shaw*, Jean-Sebastien Gounot*, Hanrong Chen, Niranjan Nagarajan, Yun William Yu"
+  venue: "ISMB / Bioinformatics"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1093/bioinformatics/btae252"
+    - label: Code
+      url: "https://github.com/bluenote-1577/floria"
+
+- year: 2024
+  title: "Fairy: fast approximate coverage for multi-sample metagenomic binning"
+  authors: "Jim Shaw, Yun William Yu"
+  venue: "Microbiome"
+  links:
+    - label: Paper
+      url: "https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-024-01861-6"
+    - label: Code
+      url: "https://github.com/bluenote-1577/fairy"
+
+- year: 2024
+  title: "skandiver: a divergence-based analysis tool for identifying intercellular mobile genetic elements"
+  authors: "Brian Zhang, Grace Oualline, Jim Shaw, Yun William Yu"
+  venue: "ECCB / Bioinformatics"
+  links:
+    - label: Paper
+      url: "https://academic.oup.com/bioinformatics/article/40/Supplement_2/ii155/7749064"
+
+- year: 2024
+  title: "Mora: abundance aware metagenomic read re-assignment for disentangling similar strains"
+  authors: "Andrew Zheng, Jim Shaw, Yun William Yu"
+  venue: "BMC Bioinformatics"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1186/s12859-024-05768-9"
+    - label: Code
+      url: "https://github.com/AfZheng126/MORA"
+
+- year: 2023
+  title: "Fast and robust metagenomic sequence comparison through sparse chaining with skani"
+  authors: "Jim Shaw, Yun William Yu"
+  venue: "Nature Methods"
+  selected: true
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1038/s41592-023-02018-3"
+    - label: Code
+      url: "https://github.com/bluenote-1577/skani"
+
+- year: 2023
+  title: "Proving sequence aligners can guarantee accuracy in almost O(m log n) time through an average-case analysis of the seed-chain-extend heuristic"
+  authors: "Jim Shaw, Yun William Yu"
+  venue: "Genome Research / RECOMB 2023"
+  selected: true
+  links:
+    - label: Paper
+      url: "https://genome.cshlp.org/content/early/2023/03/29/gr.277637.122.abstract"
+
+- year: 2023
+  title: "How to optimally sample a sequence for rapid analysis"
+  authors: "Martin Frith, Jim Shaw, John Spouge"
+  venue: "Bioinformatics"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1093/bioinformatics/btad057"
+
+- year: 2022
+  title: "Theory of local k-mer selection with applications to long-read alignment"
+  authors: "Jim Shaw, Yun William Yu"
+  venue: "Bioinformatics"
+  links:
+    - label: Paper
+      url: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btab790/6432031"
+
+- year: 2022
+  title: "Practical probabilistic and graphical formulations of long-read polyploid haplotype phasing"
+  authors: "Jim Shaw, Yun William Yu"
+  venue: "Journal of Computational Biology (RECOMB 2021 Issue)"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1089/cmb.2021.0436"
+    - label: Code
+      url: "https://github.com/bluenote-1577/flopp"
+
+- year: 2021
+  title: "Implementing Persistence-Based Clustering of Point Clouds in the Topology ToolKit"
+  authors: "Ryan Cotsakis*, Jim Shaw*, Julien Tierny, Joshua Levine"
+  venue: "Topological Methods in Data Analysis and Visualization VI, Mathematics and Visualization"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.1007/978-3-030-83500-2_17"
+
+- year: 2020
+  title: "Using image-based haplotype alignments to map global adaptation of SARS-CoV-2"
+  authors: "Tom Ouellette, Jim Shaw, Philip Awadalla"
+  venue: "bioRxiv"
+  links:
+    - label: Preprint
+      url: "https://www.biorxiv.org/content/10.1101/2021.01.13.426571v1.abstract"
+
+- year: 2020
+  title: "Further investigations into the graph theory of phi^4-periods and the c2 invariant"
+  authors: "Simone Hu*, Oliver Schnetz*, Jim Shaw*, Karen Yeats*"
+  venue: "Annales de l'Institut Henri Poincare D"
+  links:
+    - label: Paper
+      url: "https://doi.org/10.4171/aihpd/123"
+
+- year: 2019
+  title: "Hybrid metagenomic assembly enables high-resolution analysis of resistance determinants and mobile elements in human microbiomes"
+  authors: "D. Bertrand, Jim Shaw, M. Narayan, H.Q.A. Ng, S. Kumar, C. Li, M. Dvornicic, J.P. Soldo, J.Y. Kho, O.T. Ng, T. Barkham, B. Young, K. Marimuthu, K.R. Chng, M. Sikic, N. Nagarajan"
+  venue: "Nature Biotechnology"
+  links:
+    - label: Paper
+      url: "https://www.nature.com/articles/s41587-019-0191-2"
+    - label: Code
+      url: "https://github.com/CSB5/OPERA-MS"

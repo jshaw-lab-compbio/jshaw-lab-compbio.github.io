@@ -4,23 +4,17 @@ title: Publications
 ---
 
 <h1 class="page-title">Publications</h1>
-<p class="page-lede">See also our <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a> profile.</p>
+<p class="page-lede">Jim's <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a> profile also lists a complete set of publications and preprints. An asterisk (*) indicates co-lead authors.</p>
 
-<ul class="pub-list">
-  {% for pub in site.data.publications %}
-  <li>
-    <span class="pub-year">{{ pub.year }}</span>
-    <div class="pub-body">
-      <div class="pub-title">{{ pub.title }}</div>
-      <div class="pub-meta">{{ pub.authors }} — <em>{{ pub.venue }}</em></div>
-      {% if pub.links %}
-      <div class="pub-links">
-        {% for link in pub.links %}
-        <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+{% assign selected = site.data.publications | where: "selected", true %}
+{% if selected.size > 0 %}
+<div class="section" style="margin-top: 0;">
+  <h2 class="section__heading">Selected works</h2>
+  {% include pub-list.html pubs=selected %}
+</div>
+{% endif %}
+
+<div class="section">
+  <h2 class="section__heading">All publications</h2>
+  {% include pub-list.html pubs=site.data.publications %}
+</div>

@@ -32,6 +32,14 @@
       url: "https://myloasm-docs.github.io/"
 
 - year: 2025
+  title: "A genomic atlas of the human gut virome elucidates genetic factors shaping host interactions"
+  authors: "Antonio Pedro Camargo, Fotis A. Baltoumas, Eric Olo Ndela, Mateus B. Fiamenghi, Bryan D. Merrill, Matthew M. Carter, Yishay Pinto, Meenakshi Chakraborty, Antonina Andreeva, Gabriele Ghiotto, Jim Shaw, Amy D. Proal, Justin L. Sonnenburg, Ami S. Bhatt, Simon Roux, Georgios A. Pavlopoulos, Stephen Nayfach, Nikos C. Kyrpides"
+  venue: "bioRxiv"
+  links:
+    - label: Preprint
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12636319/"
+
+- year: 2025
   title: "devider: long-read reconstruction of many diverse haplotypes"
   authors: "Jim Shaw, Christina Boucher, Yun William Yu, Noelle Noyes, Heng Li"
   venue: "Genome Research / RECOMB 2025"

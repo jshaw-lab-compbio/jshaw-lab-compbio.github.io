@@ -59,7 +59,7 @@
 
 - name: sylph
   color: "#5b7553"
-  tagline: "Statistical ANI querying and profiling for metagenomic samples."
+  tagline: "Rapid taxonomic profiling for metagenomic samples through principled k-mer statistics."
   publication:
     venue: "Nature Biotechnology"
     year: 2024
@@ -83,7 +83,7 @@
 
 - name: skani
   color: "#b8942f"
-  tagline: "Fast and robust ANI calculation by sparse k-mer chaining."
+  tagline: "Fast and robust average nucleotide identity by sparse approximate seed chaining."
   publication:
     venue: "Nature Methods"
     year: 2023
@@ -118,7 +118,7 @@
 - name: OPERA-MS
   color: "#7d6b5d"
   tagline: "Hybrid metagenomic assembler for long and short reads."
-  description: "Written by during Jim's first internship in computational genomics."
+  description: "Contributions by Jim during his first internship in computational genomics."
   publication:
     venue: "Nature Biotechnology"
     year: 2019

@@ -1,8 +1,8 @@
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
     <div>
-      <strong>{{ site.title }}</strong> · {{ site.department }}, {{ site.university }}<br>
-      {{ site.address }}
+      <strong>{{ site.title }}</strong>{% if site.university != "" %} · {{ site.department }}, {{ site.university }}<br>
+      {{ site.address }}{% endif %}
     </div>
     <div class="site-footer__links">
       <a href="mailto:{{ site.email }}">Email</a>
@@ -12,4 +12,5 @@
       {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
     </div>
   </div>
+  {% include canary.html %}
 </footer>

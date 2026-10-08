@@ -12,9 +12,12 @@ Strong foundational knowledge in some quantitative field (e.g., algorithms, math
 <div class="section">
   <h2 class="section__heading">PhD Students (Recruiting for Fall 2027)</h2>
   <p>
-    Prospective CS PhD students should apply directly through the
+    {% if site.university != "" %}Prospective CS PhD students should apply directly through the
     {{ site.department }} graduate admissions process at {{ site.university }}
-    and mention your interest in working with Jim Shaw in your application. 
+    and mention your interest in working with Jim Shaw in your application.
+    {% else %}Prospective PhD students should mention their interest in working with
+    Jim Shaw in their graduate application. Application details will be posted here soon.
+    {% endif %}
   </p>
 </div>
 

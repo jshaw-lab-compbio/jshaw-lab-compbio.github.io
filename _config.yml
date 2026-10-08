@@ -5,26 +5,39 @@
 # ---------------------------------------------------------------------------
 
 title: "JShaw Lab"
-tagline: "Algorithms + Microgenomics at UNC"
+# Location hidden until announced. To restore, swap back the commented lines
+# here and under "Institution details" below.
+# tagline: "Algorithms + Microgenomics at UNC"
+# description line 2: "We will be starting in the Fall of 2027 in the Department of
+#   Computer Science at the University of North Carolina, Chapel Hill."
+tagline: "Algorithms + Microgenomics"
 description: >-
   The JShaw Lab develops algorithms, software, and tools for large-scale biological sequence analysis. 
   
-  We will be starting in the Fall of 2027 in the Department of Computer Science at the University of North Carolina, Chapel Hill. 
+  We will be starting in the Fall of 2027.
 
 # Shown in the site header/footer and on the Team page for the PI
 pi_name: "Jim Shaw"
 pi_title: "Principal Investigator"
 
 # Institution details — placeholders, update when finalized
-university: "University of North Carolina"
+# Leave university empty to hide the location site-wide.
+# university: "University of North Carolina"
+# address: "Chapel Hill, North Carolina"
+university: ""
 department: "Department of Computer Science"
-address: "Chapel Hill, North Carolina"
+address: ""
 
 email: "jshaw@example.edu"
 github: "bluenote-1577"
 google_scholar: "hNAwGS8AAAAJ"
 bluesky: "jimshaw.bsky.social"
 twitter: ""
+
+# Hidden word that AI agents scraping the site are asked to put in their emails
+# (see _includes/canary.html). Emails containing it were likely drafted by a bot
+# that read this site, so filter on it. Change it if it leaks; "" turns it off.
+email_canary: "micrometapangenomics"
 
 # Optional photo on the homepage hero (lab group photo, building, you, etc).
 # Empty ("") hides it. To add one: drop an image at assets/img/hero.jpg

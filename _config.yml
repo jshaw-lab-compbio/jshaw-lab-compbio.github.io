@@ -23,10 +23,11 @@ pi_title: "Principal Investigator"
 # Institution details — placeholders, update when finalized
 # Leave university empty to hide the location site-wide.
 # university: "University of North Carolina"
+# university: "University of North Carolina"
 # address: "Chapel Hill, North Carolina"
-university: ""
+university: "University of XXX"
 department: "Department of Computer Science"
-address: ""
+address: "XXX, USA"
 
 email: "jshaw@example.edu"
 github: "bluenote-1577"

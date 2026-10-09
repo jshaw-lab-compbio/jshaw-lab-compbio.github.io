@@ -486,6 +486,22 @@ p { margin: 0 0 1em; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 640px) {
+  .page { padding-top: 32px; }
+
+  /* Stack the tagline under the title so the brand and the menu button fit
+     on one row instead of the button wrapping onto its own line. */
+  .site-header__inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .site-header__brand {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-header__tagline { font-size: 0.8rem; }
+
   .nav-toggle { display: flex; }
 
   .site-nav {
@@ -510,7 +526,16 @@ p { margin: 0 0 1em; }
 
   .hero__title { font-size: 1.8rem; }
 
-  .hero__media { width: 200px; }
+  .hero { gap: 24px; }
+
+  /* Full-width, centred image instead of a fixed 200px block stuck to the left. */
+  .hero__media {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .hero__caption { text-align: center; }
 
   .pi-block { flex-direction: column; }
 

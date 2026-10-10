@@ -10,7 +10,7 @@ title: "JShaw Lab"
 # tagline: "Algorithms + Microgenomics at UNC"
 # description line 2: "We will be starting in the Fall of 2027 in the Department of
 #   Computer Science at the University of North Carolina, Chapel Hill."
-tagline: "Algorithms + Microgenomics"
+tagline: "Algorithms + Microgenomics at XXX"
 description: >-
   The JShaw Lab develops algorithms, software, and tools for large-scale biological sequence analysis. 
   
@@ -91,3 +91,4 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - scripts

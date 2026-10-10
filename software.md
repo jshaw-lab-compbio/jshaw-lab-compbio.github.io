@@ -23,7 +23,16 @@ Below is a complete list of software written directly by lab members or supervis
       </span>
       {% endif %}
     </div>
-    <div class="software-item__tagline">{{ tool.tagline }}</div>
+    {% assign downloads = site.data.conda_downloads[tool.conda] %}
+    <div class="software-item__summary">
+      <div class="software-item__tagline">{{ tool.tagline }}</div>
+      {% if tool.conda and downloads %}
+      <a class="software-item__downloads" href="https://anaconda.org/bioconda/{{ tool.conda }}" target="_blank" rel="noopener" title="{{ downloads }} Bioconda downloads">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>
+        {% if downloads >= 10000 %}{{ downloads | divided_by: 1000.0 | round }}k{% elsif downloads >= 1000 %}{{ downloads | divided_by: 1000.0 | round: 1 }}k{% else %}{{ downloads }}{% endif %} conda downloads
+      </a>
+      {% endif %}
+    </div>
     {% if tool.description %}<p class="software-item__desc">{{ tool.description }}</p>{% endif %}
     {% if tool.publication %}
     <a class="software-item__pub" href="{{ tool.publication.url }}" target="_blank" rel="noopener">

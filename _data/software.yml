@@ -8,10 +8,13 @@
 # description: optional extra text (e.g. credits). Omit if not needed.
 # publication: optional — venue + year shown as a small note linking to the
 #              paper. Omit for tools with nothing published yet.
+# conda:       optional Bioconda package name — shows its total download
+#              count (refreshed weekly into _data/conda_downloads.yml).
 # links:       optional list of {label, url}.
 # ---------------------------------------------------------------------------
 
 - name: savont
+  conda: savont
   color: "#a5622c"
   tagline: "Amplicon sequence variants (ASVs) from modern long-read amplicon sequencing."
   publication:
@@ -25,6 +28,7 @@
       url: "https://github.com/bluenote-1577/savont"
 
 - name: myloasm
+  conda: myloasm
   color: "#3a6ea5"
   tagline: "De novo long-read metagenome assembler, even for noisy sequences."
   publication:
@@ -38,6 +42,7 @@
       url: "https://github.com/bluenote-1577/myloasm"
 
 - name: devider
+  conda: devider
   color: "#7a5c99"
   tagline: "Long-read haplotypes for highly heterogeneous sequencing mixtures."
   publication:
@@ -49,6 +54,7 @@
       url: "https://github.com/bluenote-1577/devider"
 
 - name: fairy
+  conda: fairy
   color: "#c76b8a"
   tagline: "Fast approximate coverage for metagenomic binning."
   publication:
@@ -60,6 +66,7 @@
       url: "https://github.com/bluenote-1577/fairy"
 
 - name: sylph
+  conda: sylph
   color: "#5b7553"
   tagline: "Rapid taxonomic profiling for metagenomic samples through principled k-mer statistics."
   publication:
@@ -73,6 +80,7 @@
       url: "https://github.com/bluenote-1577/sylph"
 
 - name: floria
+  conda: floria
   color: "#2f8a8a"
   tagline: "Microbial strain phasing by flow-based MEC haplotyping."
   publication:
@@ -84,6 +92,7 @@
       url: "https://github.com/bluenote-1577/floria"
 
 - name: skani
+  conda: skani
   color: "#b8942f"
   tagline: "Fast and robust average nucleotide identity by sparse approximate seed chaining."
   publication:
@@ -107,6 +116,7 @@
       url: "https://github.com/AfZheng126/MORA"
 
 - name: flopp
+  conda: flopp
   color: "#b5483b"
   tagline: "Fast polyploid haplotype phasing for long-read data."
   publication:

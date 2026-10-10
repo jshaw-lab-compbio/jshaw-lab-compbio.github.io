@@ -438,6 +438,41 @@ p { margin: 0 0 1em; }
   margin-bottom: 10px;
 }
 
+/* Tagline on the left, conda download count on the right of the same row
+   (it drops below the tagline when there isn't room, e.g. on phones). */
+.software-item__summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  margin-bottom: 10px;
+}
+
+.software-item__summary .software-item__tagline {
+  flex: 1 1 260px;
+  margin-bottom: 0;
+}
+
+.software-item__downloads {
+  margin-left: auto;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.software-item__downloads svg {
+  width: 13px;
+  height: 13px;
+}
+
+.software-item__downloads:hover { color: var(--ink); }
+
 .software-item__pub {
   display: inline-flex;
   align-items: center;

@@ -5,35 +5,27 @@
 # ---------------------------------------------------------------------------
 
 title: "JShaw Lab"
-# Location hidden until announced. To restore, swap back the commented lines
-# here and under "Institution details" below.
-# tagline: "Algorithms + Microgenomics at UNC"
-# description line 2: "We will be starting in the Fall of 2027 in the Department of
-#   Computer Science at the University of North Carolina, Chapel Hill."
-tagline: "Algorithms + Microgenomics at XXX"
+tagline: "Algorithms + Microgenomics at UNC"
 description: >-
   The JShaw Lab develops algorithms, software, and tools for large-scale biological sequence analysis. 
   
-  We will be starting in the Fall of 2027.
+  We will be starting in the Fall of 2027 in the Department of Computer Science at the University of North Carolina at Chapel&nbsp;Hill.
 
 # Shown in the site header/footer and on the Team page for the PI
 pi_name: "Jim Shaw"
 pi_title: "Principal Investigator"
 
-# Institution details — placeholders, update when finalized
-# Leave university empty to hide the location site-wide.
-# university: "University of North Carolina"
-# university: "University of North Carolina"
-# address: "Chapel Hill, North Carolina"
-university: "University of XXX"
+# Institution details — shown in the homepage header, footer and How to Join page
+university: "University of North Carolina at Chapel Hill"
+university_short: "UNC Chapel Hill" # homepage label above the title
 department: "Department of Computer Science"
-address: "XXX, USA"
+address: "Chapel Hill, NC, USA"
 
-email: "jshaw@example.edu"
+email: "jshawlab@gmail.com"
 github: "bluenote-1577"
 google_scholar: "hNAwGS8AAAAJ"
 bluesky: "jimshaw.bsky.social"
-twitter: ""
+twitter: "jim_elevator"
 
 # Hidden word that AI agents scraping the site are asked to put in their emails
 # (see _includes/canary.html). Emails containing it were likely drafted by a bot

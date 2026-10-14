@@ -5,19 +5,16 @@ title: How to Join
 
 <h1 class="page-title">How to Join</h1>
 
-<p class="page-lede">We're always happy to hear from people excited about computational genomics, data science, and bioinformatics algorithms. </p>
+<p class="page-lede">We're always happy to hear from people excited about computational genomics, data science, and bioinformatics algorithms. Contact Jim at the email provided on this site.</p>
 
-Strong foundational knowledge in some quantitative field (e.g., algorithms, math, statistics, or machine learning) is required for joining the lab. No strict biology background is necessary. Nevertheless, our lab works in an interdisciplinary space where our algorithms directly impact how modern microbiology research is done. Therefore, curiosity about biology, microbes, and genomics is highly encouraged. 
+Strong foundational knowledge in some quantitative field (e.g., algorithms, math, statistics, or machine learning) is required for joining the lab. No strict biology background is necessary. Nevertheless, our lab works in an interdisciplinary space where our algorithms directly impact microbiology research. Therefore, curiosity about biology, microbes, and genomics is highly encouraged. 
 
 <div class="section">
   <h2 class="section__heading">PhD Students (Recruiting for Fall 2027)</h2>
   <p>
-    {% if site.university != "" %}Prospective CS PhD students should apply directly through the
-    {{ site.department }} graduate admissions process at {{ site.university }}
-    and mention your interest in working with Jim Shaw in your application.
-    {% else %}Prospective PhD students should mention their interest in working with
-    Jim Shaw in their graduate application. Application details will be posted here soon.
-    {% endif %}
+    Prospective PhD students should apply directly through the
+    <a href="https://cs.unc.edu/graduate/graduate-admissions/" target="_blank" rel="noopener">{{ site.department }} graduate admissions process</a>
+    at the {{ site.university }} and mention your interest in working with Jim Shaw in your application.
   </p>
 </div>
 
@@ -31,11 +28,12 @@ Strong foundational knowledge in some quantitative field (e.g., algorithms, math
   </p>
 </div>
 
-<div class="section">
+<!--- <div class="section">
   <h2 class="section__heading">Undergraduate &amp; Rotation Students</h2>
   <p>
-    Highly motivated undergraduates are encouraged to reach
+    Highly motivated undergraduates at UNC are encouraged to reach
     out. Please send a copy of your transcript, your CV, and 1-2 (non-AI written) paragraphs concisely explaining (1) your interest in the lab and (2) relevant coursework / projects. 
 </p>
 </div>
+--->
 

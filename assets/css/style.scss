@@ -508,14 +508,18 @@ p { margin: 0 0 1em; }
   gap: 12px;
 }
 
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+
 .site-footer__links a {
   text-decoration: none;
-  margin-left: 16px;
   color: var(--ink-soft);
   font-weight: 500;
 }
 
-.site-footer__links a:first-child { margin-left: 0; }
 .site-footer__links a:hover { color: var(--accent); }
 
 /* ---------- Responsive ---------- */

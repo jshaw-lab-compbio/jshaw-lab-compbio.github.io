@@ -5,7 +5,7 @@ title: Research
 
 <div class="hero">
   <div class="hero__text">
-    {% if site.university != "" %}<div class="hero__eyebrow">{{ site.department }} · {{ site.university }}</div>{% endif %}
+    <div class="hero__eyebrow">{{ site.university_short }} · {{ site.department }}</div>
     <h1 class="hero__title">Algorithms and Data Science for (Microbial) Genomics</h1>
     <p class="hero__lede">{{ site.description }}</p>
   </div>

@@ -28,7 +28,7 @@ title: Research
   </p>
 
   <p>
-    Our tools and software are routinely used by biologists to search, compare, and reconstruct hundreds of terabytes of genomic data for biological discovery. We take pride in computational methodology being driven by real biological applications, usually in the fascinating field of microbiome and "metaomics" research. See below for specific areas of research we are interested in. 
+    Our tools and software are routinely used for biological discovery. We take pride in developing cutting-edge, rigorous algorithms driven by real biological applications—usually in the fascinating field of microbiome "meta-omics" research. See below for specific areas of research we are interested in. 
        </p>
 </div>
 
@@ -43,7 +43,7 @@ title: Research
       </div>
       <div>
         <h3>Terabyte-scale algorithms for disentangling microbial genomics data</h3>
-        <p>To analyze and compare terabytes of redundant, noisy sequencing data, we design highly efficient algorithms and turn them into high-performance tools. 
+        <p>To analyze and compare terabytes of redundant, noisy sequencing data, we design efficient algorithms and turn them into high-performance tools. 
     We leverage ideas from string algorithms (e.g., edit distance computation / dynamic programming) and combine them with a probabilistic flavor (e.g., sketching-based techniques and statistical inference).  </p>
       </div>
     </div>
@@ -57,7 +57,7 @@ title: Research
       </div>
       <div>
         <h3>Long-read metagenome assembly: reconstructing genomes from substrings</h3>
-        <p> We work on the exciting field of metagenome assembly, where we use highly efficient graph algorithms to reconstruct microbial genomes from the sequencing of entire microbiomes, such as our gut. In some environments, more than 90% of genomes can be completely novel; thus, our algorithms are frequently used to discover genomes of completely novel species. </p>
+        <p> We develop novel graph algorithms to reconstruct microbial genomes from the sequencing of entire microbiomes, such as our gut. In some environments, more than 90% of genomes can be completely novel; thus, our algorithms are frequently used to discover genomes of completely novel species. </p>
       </div>
     </div>
     <div class="research-item">
@@ -67,8 +67,8 @@ title: Research
         </svg>
       </div>
       <div>
-        <h3>Microbiome genome evolution and horizontal gene transfer</h3>
-        <p> In a microbiome, trillions of microbes interact and evolve, often driven by horizontal gene transfer, where DNA jumps between organisms. This is mediated by mobile genetic elements (MGEs) that confer important adaptive traits such as pathogenicity or antibiotic resistance. We are building computational tools to illuminate these events and broadly characterize MGEs such as prophages, plasmids, and transposons in human and environmental microbiomes.  </p>
+        <h3>Algorithms for microbiome genome evolution and horizontal gene transfer</h3>
+        <p> Trillions of microbes interact and evolve in microbiomes. Evolution is driven by horizontal gene transfer, where DNA jumps between organisms. The mobile genetic elements (MGEs) involved often confer important traits such as pathogenicity or antibiotic resistance. We are building computational tools to illuminate these phenomena in human and environmental microbiomes, ultimately improving our understanding of how pathogens evolve. </p>
       </div>
     </div>
   </div>

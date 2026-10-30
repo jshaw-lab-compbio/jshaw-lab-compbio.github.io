@@ -15,7 +15,13 @@ pi_title: "Principal Investigator"
 
 # Institution details — shown in the homepage header, footer and How to Join page
 university: "University of North Carolina at Chapel Hill"
-university_short: "UNC Chapel Hill" # homepage label above the title
+university_short: "UNC Chapel Hill"
+
+# Small blue label above the homepage title. Empty ("") hides it.
+hero_eyebrow: "UNC Chapel Hill | Department of Computer Science"
+
+# Show the 3 most recent papers at the bottom of the homepage (true / false).
+home_recent_publications: false
 department: "Department of Computer Science"
 address: "Chapel Hill, NC, USA"
 

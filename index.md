@@ -3,13 +3,9 @@ layout: default
 title: Research
 ---
 
+<!-- The image floats right so the intro text and Research Overview flow beside
+     it; no gap opens up below short intro text. -->
 <div class="hero">
-  <div class="hero__text">
-    <div class="hero__eyebrow">{{ site.university_short }} · {{ site.department }}</div>
-    <h1 class="hero__title">Algorithms and Data Science for (Microbial) Genomics</h1>
-    <p class="hero__lede">{{ site.description }}</p>
-  </div>
-
   {% if site.hero_image and site.hero_image != "" %}
   <div class="hero__media">
     <img src="{{ site.hero_image | relative_url }}" alt="{{ site.hero_image_caption | default: site.title }}">
@@ -18,18 +14,24 @@ title: Research
     {% endif %}
   </div>
   {% endif %}
-</div>
 
-<div class="section">
-  <h2 class="section__heading">Research Overview</h2>
-  <p>
-<b>We build computational methods to make sense
-    of large-scale biological sequence data</b>, such as trillions of DNA or amino acids characters. To do this, we use a pragmatic combination of techniques spanning <b>classical algorithm design to modern data science methods</b>. 
-  </p>
+  <div class="hero__text">
+    {% if site.hero_eyebrow and site.hero_eyebrow != "" %}<div class="hero__eyebrow">{{ site.hero_eyebrow }}</div>{% endif %}
+    <h1 class="hero__title">Algorithms and Data Science for (Microbial) Genomics</h1>
+    <p class="hero__lede">{{ site.description }}</p>
+  </div>
 
-  <p>
-    Our tools and software are routinely used for biological discovery. We take pride in developing cutting-edge, rigorous algorithms driven by real biological applications—usually in the fascinating field of microbiome "meta-omics" research. See below for specific areas of research we are interested in. 
-       </p>
+  <div class="section hero__overview">
+    <h2 class="section__heading">Research Overview</h2>
+    <p>
+  <b>We build computational methods to make sense
+      of large-scale biological sequence data</b>, such as trillions of DNA or amino acids characters. To do this, we use a pragmatic combination of techniques spanning <b>classical algorithm design to modern data science methods</b>. 
+    </p>
+
+    <p>
+      Our tools and software are routinely used for biological discovery. We take pride in developing cutting-edge, rigorous algorithms driven by real biological applications—usually in the fascinating field of microbiome "meta-omics" research. See below for specific areas of research we are interested in. 
+         </p>
+  </div>
 </div>
 
 <div class="section">
@@ -74,9 +76,11 @@ title: Research
   </div>
 </div>
 
+{% if site.home_recent_publications %}
 <div class="section">
   <h2 class="section__heading">Recent Publications</h2>
   {% assign recent = site.data.publications | slice: 0, 3 %}
   {% include pub-list.html pubs=recent %}
   <a class="view-all" href="{{ '/publications/' | relative_url }}">View all publications &rarr;</a>
 </div>
+{% endif %}

@@ -144,29 +144,25 @@ p { margin: 0 0 1em; }
 
 /* ---------- Home / hero ---------- */
 
+/* The image floats right and the intro text plus Research Overview wrap
+   around it, so the layout adapts to however long the intro text is.
+   flow-root keeps the float inside, so the next section starts below it. */
 .hero {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: flow-root;
 }
 
-.hero__text {
-  flex: 1;
-  min-width: 280px;
-}
-
+/* Kept to a single line: on narrower screens the font shrinks so the text
+   (about 25x its font size wide) fits beside the 340px image column. */
 .hero__eyebrow {
   color: var(--accent);
+  font-size: min(1.05rem, calc((100vw - 388px) / 25));
   font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  white-space: nowrap;
   margin-bottom: 0.6em;
 }
 
 .hero__title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   max-width: 720px;
 }
 
@@ -177,8 +173,9 @@ p { margin: 0 0 1em; }
 }
 
 .hero__media {
+  float: right;
   width: 300px;
-  flex-shrink: 0;
+  margin: 0 0 16px 40px;
 }
 
 .hero__media img {
@@ -202,8 +199,8 @@ p { margin: 0 0 1em; }
   margin-top: 3.5rem;
 }
 
-.hero + .section {
-  margin-top: 0.75rem;
+.hero__text + .hero__overview {
+  margin-top: 1.5rem;
 }
 
 .section__heading {
@@ -479,8 +476,18 @@ p { margin: 0 0 1em; }
   gap: 8px;
   font-size: 0.82rem;
   color: var(--ink-soft);
-  border-left: 2px solid var(--tool-color, var(--accent));
-  padding-left: 10px;
+  text-decoration: none;
+}
+
+.software-item__pub span { text-decoration: underline; }
+
+/* FASTA-style ">" marker in the tool's colour, matching the homepage label. */
+.software-item__pub::before {
+  content: ">";
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--tool-color, var(--accent));
 }
 
 /* ---------- Join page ---------- */
@@ -563,16 +570,29 @@ p { margin: 0 0 1em; }
     color: var(--accent);
   }
 
-  .hero__title { font-size: 1.8rem; }
+  .hero__title { font-size: 1.6rem; }
 
-  .hero { gap: 24px; }
+  /* Stack instead of float: intro text, then the image, then the overview. */
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
 
-  /* Full-width, centred image instead of a fixed 200px block stuck to the left. */
+  .hero__text { order: 0; }
+
+  /* No image beside it here, so it only has to fit the page gutters. */
+  .hero__eyebrow { font-size: min(1.05rem, calc((100vw - 48px) / 25)); }
+
+  /* Full-width, centred image instead of a narrow block stuck to the side. */
   .hero__media {
+    order: 1;
+    float: none;
     width: 100%;
     max-width: 360px;
-    margin: 0 auto;
+    margin: 8px auto 0;
   }
+
+  .hero__overview { order: 2; }
 
   .hero__caption { text-align: center; }
 

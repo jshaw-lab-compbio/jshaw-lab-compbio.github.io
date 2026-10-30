@@ -36,7 +36,7 @@ Below is a complete list of software written directly by lab members or supervis
     {% if tool.description %}<p class="software-item__desc">{{ tool.description }}</p>{% endif %}
     {% if tool.publication %}
     <a class="software-item__pub" href="{{ tool.publication.url }}" target="_blank" rel="noopener">
-      {{ tool.publication.venue }}, {{ tool.publication.year }}
+      <span>{{ tool.publication.venue }}, {{ tool.publication.year }}</span>
     </a>
     {% endif %}
   </div>

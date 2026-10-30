@@ -7,7 +7,7 @@ title: How to Join
 
 <p class="page-lede">We're always happy to hear from people excited about computational genomics, data science, and bioinformatics algorithms. Contact Jim at the email provided on this site.</p>
 
-Strong foundational knowledge in some quantitative field (e.g., algorithms, math, statistics, or machine learning) is required for joining the lab. No strict biology background is necessary. Nevertheless, our lab works in an interdisciplinary space where our algorithms directly impact microbiology research. Therefore, curiosity about biology, microbes, and genomics is highly encouraged. 
+Strong foundational knowledge in some quantitative field (e.g., algorithms, math, statistics, or machine learning) is required for joining the lab. **No biology background is necessary.** Nevertheless, our lab works in an interdisciplinary space where our algorithms directly impact biology research. Therefore, curiosity about biology, microbes, and genomics is highly encouraged. 
 
 <div class="section">
   <h2 class="section__heading">PhD Students (Recruiting for Fall 2027)</h2>

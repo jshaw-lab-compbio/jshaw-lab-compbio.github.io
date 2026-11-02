@@ -34,11 +34,18 @@ Below is a complete list of software written directly by lab members or supervis
       {% endif %}
     </div>
     {% if tool.description %}<p class="software-item__desc">{{ tool.description }}</p>{% endif %}
-    {% if tool.publication %}
-    <a class="software-item__pub" href="{{ tool.publication.url }}" target="_blank" rel="noopener">
-      <span>{{ tool.publication.venue }}, {{ tool.publication.year }}</span>
-    </a>
-    {% endif %}
+    <div class="software-item__meta">
+      {% if tool.publication %}
+      <a class="software-item__pub" href="{{ tool.publication.url }}" target="_blank" rel="noopener">
+        <span>{{ tool.publication.venue }}, {{ tool.publication.year }}</span>
+      </a>
+      {% endif %}
+      {% if tool.tags %}
+      <ul class="software-item__tags">
+        {% for tag in tool.tags %}{% include tag.html name=tag %}{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
   </div>
   {% endfor %}
 </div>

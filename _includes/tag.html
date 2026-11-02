@@ -1,0 +1,17 @@
+{%- comment -%}
+  One software topic tag: a small line icon (same style as the homepage
+  research icons) plus the tag name. Each known tag has its own icon and
+  colour (see .tag--<name> in style.scss); unknown tags get a plain dot.
+{%- endcomment -%}
+{%- assign t = include.name | slugify -%}
+{%- case t -%}
+  {%- when "metagenomics" -%}{%- capture d -%}<circle cx="8" cy="9" r="3.5"/><circle cx="16.5" cy="8" r="2.5"/><circle cx="13" cy="16.5" r="3.5"/>{%- endcapture -%}
+  {%- when "assembly" -%}{%- capture d -%}<path d="M3 7h9M8 12h9M13 17h8"/>{%- endcapture -%}
+  {%- when "alignment" -%}{%- capture d -%}<path d="M3 7h18M3 17h18M7 10v4M12 10v4M17 10v4"/>{%- endcapture -%}
+  {%- when "amplicon" -%}{%- capture d -%}<path d="M4 5v14M20 5v14M8 8h8M8 12h8M8 16h8"/>{%- endcapture -%}
+  {%- when "profiling" -%}{%- capture d -%}<path d="M5 19v-7M10 19V6M15 19v-9M20 19v-4"/>{%- endcapture -%}
+  {%- when "microbial-genomics" -%}{%- capture d -%}<rect x="3" y="8" width="14" height="8" rx="4"/><path d="M17 12c1.5-2 3-2 4 0"/>{%- endcapture -%}
+  {%- when "variation" -%}{%- capture d -%}<path d="M3 15h6l3-8 3 8h6"/>{%- endcapture -%}
+  {%- else -%}{%- capture d -%}<circle cx="12" cy="12" r="3"/>{%- endcapture -%}
+{%- endcase -%}
+<li class="tag tag--{{ t }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ d }}</svg>{{ include.name }}</li>

@@ -470,6 +470,48 @@ p { margin: 0 0 1em; }
 
 .software-item__downloads:hover { color: var(--ink); }
 
+/* Publication note and topic tags share the last row. */
+.software-item__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.software-item__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each topic keeps the same colour and icon on every tool, so the tags read
+   as a small key rather than generic pills. */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--tag-color, var(--ink-soft));
+}
+
+.tag svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.tag--metagenomics { --tag-color: #3f7d5a; }
+.tag--assembly     { --tag-color: #3a6ea5; }
+.tag--alignment    { --tag-color: #a5622c; }
+.tag--amplicon     { --tag-color: #b0466b; }
+.tag--profiling    { --tag-color: #7a5c99; }
+.tag--variation    { --tag-color: #2f8a8a; }
+.tag--microbial-genomics { --tag-color: #8a6a3b; }
+
 .software-item__pub {
   display: inline-flex;
   align-items: center;

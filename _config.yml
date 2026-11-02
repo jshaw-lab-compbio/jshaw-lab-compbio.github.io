@@ -40,7 +40,7 @@ email_canary: "micrometapangenomics"
 # Empty ("") hides it. To add one: drop an image at assets/img/hero.jpg
 # (wide, e.g. 1600x900) and set hero_image to its path below.
 hero_image: "assets/img/gut_graph_hero.png"
-hero_image_caption: "An assembly graph representing several circular bacterial chromosomes from a real human oral microbiome."
+hero_image_caption: "An assembly graph for reconstructing circular bacterial chromosomes from a human oral microbiome."
 
 # Top navigation, in order. Add/remove/reorder entries here.
 nav:

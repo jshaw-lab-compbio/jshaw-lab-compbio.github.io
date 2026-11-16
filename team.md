@@ -9,7 +9,7 @@ title: Jim & Team
 {% assign pi = site.data.team | where: "role", "pi" | first %}
 {% if pi %}
 <div class="section">
-  <h2 class="section__heading">Principal Investigator</h2>
+  <h2 class="section__heading">Assistant Professor</h2>
   {% include person-card.html person=pi %}
 </div>
 {% endif %}

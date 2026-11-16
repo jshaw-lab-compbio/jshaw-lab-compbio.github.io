@@ -1,0 +1,25 @@
+{%- comment -%}
+  One person on the team page, as a large card: photo, role, name, bio,
+  then CV and other links. Used for the PI and for every lab member.
+{%- endcomment -%}
+{%- assign p = include.person -%}
+<div class="pi-block">
+  {% if p.photo and p.photo != "" %}
+  <img class="pi-block__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+  {% else %}
+  <div class="pi-block__photo pi-block__photo--empty" aria-hidden="true"></div>
+  {% endif %}
+  <div class="pi-block__info">
+    <div class="team-card__role">{{ p.title | default: p.role }}</div>
+    <h3 class="pi-block__name">{{ p.name }}</h3>
+    {% if p.bio %}<p class="team-card__bio">{{ p.bio }}</p>{% endif %}
+    {% if p.links or p.cv %}
+    <div class="pub-links">
+      {% if p.cv %}<a href="{% if p.cv contains '://' %}{{ p.cv }}{% else %}{{ p.cv | relative_url }}{% endif %}" target="_blank" rel="noopener">CV</a>{% endif %}
+      {% for link in p.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

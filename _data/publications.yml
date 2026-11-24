@@ -11,6 +11,16 @@
 # ---------------------------------------------------------------------------
 
 - year: 2026
+  title: "deeprok: highly accurate prokaryotic gene prediction through deep learning and overlap-aware decoding"
+  authors: "Q. Xu, Heng Li, Jim Shaw"
+  venue: "bioRxiv"
+  links:
+    - label: Preprint
+      url: "https://www.biorxiv.org/content/10.64898/2026.11.21.768321v1"
+    - label: Code
+      url: "https://github.com/susanxu3/deeprok"
+
+- year: 2026
   title: "Sensitive long-read amplicon sequence variant recovery with savont"
   authors: "Jim Shaw, Marie Riisgaard-Jensen, Kasper Skytte Andersen, Rasmus Kirkegaard, Morten Kam Dahl Dueholm, Heng Li"
   venue: "bioRxiv"

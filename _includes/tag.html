@@ -11,6 +11,8 @@
   {%- when "amplicon" -%}{%- capture d -%}<path d="M4 5v14M20 5v14M8 8h8M8 12h8M8 16h8"/>{%- endcapture -%}
   {%- when "profiling" -%}{%- capture d -%}<path d="M5 19v-7M10 19V6M15 19v-9M20 19v-4"/>{%- endcapture -%}
   {%- when "microbial-genomics" -%}{%- capture d -%}<rect x="3" y="8" width="14" height="8" rx="4"/><path d="M17 12c1.5-2 3-2 4 0"/>{%- endcapture -%}
+  {%- when "annotation" -%}{%- capture d -%}<path d="M3 9h13l4 3-4 3H3z"/>{%- endcapture -%}
+  {%- when "deep-learning" -%}{%- capture d -%}<circle cx="5" cy="5" r="2.2"/><circle cx="5" cy="12" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="18" cy="12" r="2.6"/><path d="M7 6l8.7 4.8M7.2 12h8.2M7 18l8.7-4.8"/>{%- endcapture -%}
   {%- when "variation" -%}{%- capture d -%}<path d="M3 15h6l3-8 3 8h6"/>{%- endcapture -%}
   {%- else -%}{%- capture d -%}<circle cx="12" cy="12" r="3"/>{%- endcapture -%}
 {%- endcase -%}

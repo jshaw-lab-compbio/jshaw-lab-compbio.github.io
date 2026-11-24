@@ -14,8 +14,23 @@
 # tags:        optional list of topic tags, e.g. [metagenomics, assembly].
 #              Each has its own icon + colour (_includes/tag.html, .tag--*
 #              in style.scss): metagenomics, assembly, alignment, amplicon,
-#              profiling, variation, microbial genomics. Others get a dot.
+#              profiling, variation, microbial genomics, annotation,
+#              deep learning.
+#              Others get a dot.
 # ---------------------------------------------------------------------------
+
+- name: deeprok
+  tags: [annotation, deep learning, microbial genomics]
+  conda: deeprok
+  color: "#6f8a2e"
+  tagline: "Prokaryotic gene prediction with deep learning and overlap-aware decoding."
+  publication:
+    venue: "bioRxiv"
+    year: 2026
+    url: "https://www.biorxiv.org/content/10.64898/2026.11.21.768321v1"
+  links:
+    - label: GitHub
+      url: "https://github.com/susanxu3/deeprok"
 
 - name: savont
   tags: [amplicon, profiling, variation]
